@@ -17,7 +17,7 @@ for col in ['discounted_price', 'actual_price', 'discount_percentage', 'rating',
 df['price_diff'] = df['actual_price'] - df['discounted_price']
 df['discount_ratio'] = df['price_diff'] / df['actual_price']
 
-# ---- Correlation analysis ----
+#Correlation analysis
 corr = df[['actual_price','discounted_price','discount_percentage','rating','rating_count','price_diff','discount_ratio']].corr()
 
 plt.figure(figsize=(8,6))
@@ -42,5 +42,6 @@ pivot.sort_values('discount_percentage', ascending=False).head(10).plot(kind='ba
 plt.title("Top Categories by Average Discount %")
 plt.ylabel("Average Discount %")
 plt.show()
+
 
 
