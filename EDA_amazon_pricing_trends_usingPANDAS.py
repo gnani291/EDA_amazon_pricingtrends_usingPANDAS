@@ -4,7 +4,7 @@ import seaborn as sns
 
 df = pd.read_csv("amazon.csv")
 
-# ---- Clean numeric columns ----
+#Clean numeric columns
 for col in ['discounted_price', 'actual_price', 'discount_percentage', 'rating', 'rating_count']:
     df[col] = (df[col].astype(str)
                          .str.replace('₹','', regex=True)
@@ -42,3 +42,4 @@ pivot.sort_values('discount_percentage', ascending=False).head(10).plot(kind='ba
 plt.title("Top Categories by Average Discount %")
 plt.ylabel("Average Discount %")
 plt.show()
+
