@@ -33,7 +33,7 @@ plt.xlabel("Discount Percentage")
 plt.ylabel("Count")
 plt.show()
 
-# ---- Pivot: Category vs Average Discount ----
+#Category vs Average Discount
 pivot = pd.pivot_table(df, index='category', values='discount_percentage', aggfunc='mean')
 print(pivot.head())
 
@@ -42,6 +42,7 @@ pivot.sort_values('discount_percentage', ascending=False).head(10).plot(kind='ba
 plt.title("Top Categories by Average Discount %")
 plt.ylabel("Average Discount %")
 plt.show()
+
 
 
 
