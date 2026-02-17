@@ -25,7 +25,7 @@ sns.heatmap(corr, annot=True, cmap="coolwarm", fmt=".2f")
 plt.title("Correlation Heatmap (Price, Discount, Rating)")
 plt.show()
 
-# ---- Distribution of discounts ----
+#Distribution of discounts
 plt.figure(figsize=(8,5))
 sns.histplot(df['discount_percentage'], bins=20, kde=True, color="teal")
 plt.title("Distribution of Discount %")
@@ -42,6 +42,7 @@ pivot.sort_values('discount_percentage', ascending=False).head(10).plot(kind='ba
 plt.title("Top Categories by Average Discount %")
 plt.ylabel("Average Discount %")
 plt.show()
+
 
 
 
