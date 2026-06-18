@@ -13,7 +13,7 @@ for col in ['discounted_price', 'actual_price', 'discount_percentage', 'rating',
                          .str.strip())
     df[col] = pd.to_numeric(df[col], errors='coerce')
 
-#Create new features
+# Create new features
 df['price_diff'] = df['actual_price'] - df['discounted_price']
 df['discount_ratio'] = df['price_diff'] / df['actual_price']
 
