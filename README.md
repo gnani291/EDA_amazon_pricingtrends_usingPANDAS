@@ -10,4 +10,5 @@ The analysis then moves to understanding relationships between variables using a
 
 Finally, the code uses a pivot table to compute the average discount percentage for each product category. A bar chart visualizes the top categories offering the highest average discounts, making it easy to compare categories.
 
+
 Overall, this script helps uncover pricing patterns, discount trends, and their relationship with ratings in an Amazon product dataset.
